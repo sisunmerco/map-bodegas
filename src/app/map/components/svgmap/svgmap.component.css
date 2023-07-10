@@ -2,12 +2,12 @@
   height: 95vh;
 }
 
-.container>.row {
+.container > .row {
   height: 100%;
 }
 
 .land {
-  fill: #CCCCCC;
+  fill: #cccccc;
   fill-opacity: 1;
   stroke: white;
   stroke-opacity: 1;
@@ -18,20 +18,21 @@ h2.title-map {
   margin-top: -50px;
   line-height: 1;
   font-size: 2.2em;
-  font-weight: 900;
+  font-weight: 700;
+  color: #3b3663;
 }
 
 /*ZONAS*/
 .swaypzone {
   position: relative;
-  fill: #D5AF31;
+  fill: #d5af31;
   opacity: 1;
-  transition: all .2s;
+  transition: all 0.2s;
 }
 
 .swaypzone:hover {
   cursor: pointer;
-  fill: #D5AF31;
+  fill: #d5af31;
   stroke: #000;
   opacity: 1;
 }
@@ -39,7 +40,7 @@ h2.title-map {
 .active {
   position: relative;
   cursor: pointer;
-  fill: #D5AF31;
+  fill: #d5af31;
   stroke: #000;
   stroke-width: 2px;
   opacity: 1;
@@ -60,7 +61,7 @@ h2.title-map {
 }
 
 .outZone:not(.active) {
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .column-map {
@@ -78,17 +79,17 @@ h2.title-map {
 .title-zone {
   font-size: 1.8em;
   opacity: 0;
-  color: #D5AF31;
-  animation: fadeInX .5s ease-out both;
-  animation-delay: .10s;
+  color: #d5af31;
+  animation: fadeInX 0.5s ease-out both;
+  animation-delay: 0.1s;
 }
 
 .title-co {
   font-size: 1.3em;
   opacity: 0;
   color: #ccc;
-  animation: fadeInX .5s ease-in-out both;
-  animation-delay: .20s;
+  animation: fadeInX 0.5s ease-in-out both;
+  animation-delay: 0.2s;
 }
 
 .list-areas {
@@ -101,7 +102,7 @@ h2.title-map {
 .item-area {
   opacity: 0;
   font-weight: 700;
-  animation: fadeInX .5s ease-out both;
+  animation: fadeInX 0.5s ease-out both;
 }
 
 .list-areas::-webkit-scrollbar {
@@ -114,7 +115,7 @@ h2.title-map {
 }
 
 .list-areas::-webkit-scrollbar-thumb {
-  background: #D5AF31;
+  background: #d5af31;
 }
 
 .item-area:nth-child(1) {
@@ -122,35 +123,35 @@ h2.title-map {
 }
 
 .item-area:nth-child(2) {
-  animation-delay: .1s;
+  animation-delay: 0.1s;
 }
 
 .item-area:nth-child(3) {
-  animation-delay: .2s;
+  animation-delay: 0.2s;
 }
 
 .item-area:nth-child(4) {
-  animation-delay: .3s;
+  animation-delay: 0.3s;
 }
 
 .item-area:nth-child(5) {
-  animation-delay: .4s;
+  animation-delay: 0.4s;
 }
 
 .item-area:nth-child(6) {
-  animation-delay: .5s;
+  animation-delay: 0.5s;
 }
 
 .item-area:nth-child(7) {
-  animation-delay: .6s;
+  animation-delay: 0.6s;
 }
 
 .item-area:nth-child(8) {
-  animation-delay: .7s;
+  animation-delay: 0.7s;
 }
 
 .item-area:nth-child(9) {
-  animation-delay: .9s;
+  animation-delay: 0.9s;
 }
 
 .item-area:nth-child(10) {
@@ -222,7 +223,7 @@ h2.title-map {
   padding-right: 15px;
   width: 95%;
   border: 1px solid #000;
-  animation: fadeInX .5s ease-in forwards;
+  animation: fadeInX 0.5s ease-in forwards;
 }
 
 @keyframes fadeInX {
@@ -262,7 +263,7 @@ h2.title-map {
 .col-mv-title {
   display: none;
   align-items: end;
-  justify-content: center
+  justify-content: center;
 }
 
 .item-title {
@@ -274,8 +275,7 @@ h2.title-map {
   margin-bottom: 0;
 }
 
-@media (max-width:480px) {
-
+@media (max-width: 480px) {
   .heading,
   .title-map {
     text-align: center;
