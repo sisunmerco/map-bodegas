@@ -1,0 +1,304 @@
+.container {
+  height: 95vh;
+}
+
+.container>.row {
+  height: 100%;
+}
+
+.land {
+  fill: #CCCCCC;
+  fill-opacity: 1;
+  stroke: white;
+  stroke-opacity: 1;
+  stroke-width: 0.5;
+}
+
+h2.title-map {
+  margin-top: -50px;
+  line-height: 1;
+  font-size: 2.2em;
+  font-weight: 900;
+}
+
+/*ZONAS*/
+.swaypzone {
+  position: relative;
+  fill: #D5AF31;
+  opacity: 1;
+  transition: all .2s;
+}
+
+.swaypzone:hover {
+  cursor: pointer;
+  fill: #D5AF31;
+  stroke: #000;
+  opacity: 1;
+}
+
+.active {
+  position: relative;
+  cursor: pointer;
+  fill: #D5AF31;
+  stroke: #000;
+  stroke-width: 2px;
+  opacity: 1;
+}
+
+.active::after {
+  content: "\f13b";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 30px;
+  color: #555555;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  transform: translate(-50%, -50%);
+  z-index: 999999999;
+  display: block;
+}
+
+.outZone:not(.active) {
+  opacity: .5;
+}
+
+.column-map {
+  display: flex;
+  align-items: center;
+}
+
+.column-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.title-zone {
+  font-size: 1.8em;
+  opacity: 0;
+  color: #D5AF31;
+  animation: fadeInX .5s ease-out both;
+  animation-delay: .10s;
+}
+
+.title-co {
+  font-size: 1.3em;
+  opacity: 0;
+  color: #ccc;
+  animation: fadeInX .5s ease-in-out both;
+  animation-delay: .20s;
+}
+
+.list-areas {
+  padding: 0;
+  list-style: none;
+  height: 280px;
+  overflow: auto;
+}
+
+.item-area {
+  opacity: 0;
+  font-weight: 700;
+  animation: fadeInX .5s ease-out both;
+}
+
+.list-areas::-webkit-scrollbar {
+  width: 3px;
+}
+
+.list-areas::-webkit-scrollbar-track {
+  background: #fff;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.list-areas::-webkit-scrollbar-thumb {
+  background: #D5AF31;
+}
+
+.item-area:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.item-area:nth-child(2) {
+  animation-delay: .1s;
+}
+
+.item-area:nth-child(3) {
+  animation-delay: .2s;
+}
+
+.item-area:nth-child(4) {
+  animation-delay: .3s;
+}
+
+.item-area:nth-child(5) {
+  animation-delay: .4s;
+}
+
+.item-area:nth-child(6) {
+  animation-delay: .5s;
+}
+
+.item-area:nth-child(7) {
+  animation-delay: .6s;
+}
+
+.item-area:nth-child(8) {
+  animation-delay: .7s;
+}
+
+.item-area:nth-child(9) {
+  animation-delay: .9s;
+}
+
+.item-area:nth-child(10) {
+  animation-delay: 1s;
+}
+
+.item-area:nth-child(11) {
+  animation-delay: 1.1s;
+}
+
+.item-area:nth-child(12) {
+  animation-delay: 1.2s;
+}
+
+.item-area:nth-child(13) {
+  animation-delay: 1.3s;
+}
+
+.item-area:nth-child(14) {
+  animation-delay: 1.4s;
+}
+
+.item-area:nth-child(15) {
+  animation-delay: 1.5s;
+}
+
+.item-area:nth-child(16) {
+  animation-delay: 1.6;
+}
+
+.item-area:nth-child(17) {
+  animation-delay: 1.7s;
+}
+
+.item-area:nth-child(18) {
+  animation-delay: 1.8s;
+}
+
+.item-area:nth-child(19) {
+  animation-delay: 1.9s;
+}
+
+.item-area:nth-child(20) {
+  animation-delay: 2s;
+}
+.item-area:nth-child(21) {
+  animation-delay: 2.1s;
+}
+.item-area:nth-child(22) {
+  animation-delay: 2.2s;
+}
+
+.row-title {
+  align-items: center;
+}
+
+.row-zones {
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+}
+
+.wrapper-areas {
+  width: 100%;
+  margin-top: 25px;
+}
+
+.separator {
+  padding-right: 15px;
+  width: 95%;
+  border: 1px solid #000;
+  animation: fadeInX .5s ease-in forwards;
+}
+
+@keyframes fadeInX {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInY {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.title-map {
+  padding: 0;
+}
+
+.title-map.mv {
+  font-size: 1.2em;
+  font-weight: 900;
+  display: none;
+}
+
+.col-mv-title {
+  display: none;
+  align-items: end;
+  justify-content: center
+}
+
+.item-title {
+  margin-left: 5px;
+}
+
+.col-mv-title .heading {
+  line-height: 1;
+  margin-bottom: 0;
+}
+
+@media (max-width:480px) {
+
+  .heading,
+  .title-map {
+    text-align: center;
+  }
+
+  .container {
+    padding: 35px 15px;
+    height: auto;
+  }
+
+  .svg-map {
+    width: 100%;
+  }
+
+  .col-mv-title {
+    display: flex;
+  }
+
+  .title-map {
+    display: none;
+  }
+
+  .title-map.mv {
+    display: block;
+  }
+}
