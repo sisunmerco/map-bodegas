@@ -16,6 +16,8 @@ export class SvgmapComponent{
   constructor(private zoneService:ZonesService){
     this.zones = this.zoneService.getZones()
     localStorage.clear()
+
+      this.searchZone('CO-SAN')
   }
 
   idElement!: string

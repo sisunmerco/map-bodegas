@@ -1,11 +1,3 @@
-.container {
-  height: 95vh;
-}
-
-.container > .row {
-  height: 100%;
-}
-
 .land {
   fill: #cccccc;
   fill-opacity: 1;
@@ -17,9 +9,14 @@
 h2.title-map {
   margin-top: -50px;
   line-height: 1;
-  font-size: 2.2em;
+  font-size: 1.8em;
   font-weight: 700;
   color: #3b3663;
+}
+.title-select{
+  font-size: .7em;
+  display: flex;
+  align-items: center;
 }
 
 /*ZONAS*/
@@ -95,7 +92,7 @@ h2.title-map {
 .list-areas {
   padding: 0;
   list-style: none;
-  height: 280px;
+  height: 270px;
   overflow: auto;
 }
 
