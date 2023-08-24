@@ -1,3 +1,6 @@
+.container-fluid{
+  background-color: #f8f8f8;
+}
 .land {
   fill: #cccccc;
   fill-opacity: 1;

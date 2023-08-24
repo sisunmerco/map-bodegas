@@ -451,6 +451,27 @@ export class ZonesService {
           },
         ],
       },
+      {
+        id: 'CO-CAL',
+        title: 'Caldas',
+        areas: [
+          {
+            title: 'Manizales',
+          },
+          {
+            title: 'Villamaria',
+          },
+        ],
+      },
+      {
+        id: 'CO-CAQ',
+        title: 'Caquetá',
+        areas: [
+          {
+            title: 'Florencia',
+          }
+        ],
+      },
     ];
   }
 
